@@ -11,7 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  - template: ./pipelines/build_params.yml
+  - template: ./build_params.yml
 
 steps:
 - script: echo ${{ variables.Hello}}
