@@ -22,4 +22,5 @@ steps:
   inputs:
     command: buildAndPush
     Dockerfile: ./Dockerfile
+    repository: testrepo
     containerRegistry: ${{ variables.dockerRegistryServiceConnection }}
