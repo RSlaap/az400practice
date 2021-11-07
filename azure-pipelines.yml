@@ -14,5 +14,5 @@ variables:
   - template: ./build_params.yml
 
 steps:
-- script: ${{ variables.Hello}}
+- script: echo ${{ variables.Hello}}
   displayName: 'Run a one-line script'
