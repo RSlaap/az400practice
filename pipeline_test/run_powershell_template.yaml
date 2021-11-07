@@ -1,7 +1,5 @@
-parameters:
-- name: subscription
-  displayName: Name of the azure subscription
-  type: string
+variables:
+- name: subscription 
   
 
 trigger:
@@ -13,7 +11,7 @@ pool:
 steps:
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: ${{ parameters.subscription }}
+    azureSubscription: ${{ variables.subscription }}
     ScriptType: 'FilePath'
     ScriptPath: 'powershell_test.ps1'
     azurePowerShellVersion: 'LatestVersion'
