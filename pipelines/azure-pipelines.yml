@@ -21,7 +21,6 @@ steps:
   displayName: Build an image
   inputs:
     command: buildAndPush
-    Dockerfile: $(Build.SourcesDirectory)/Dockerfile'
     repository: testrepo
     containerRegistry: ${{ variables.dockerRegistryServiceConnection }}
     tags: python-docker
