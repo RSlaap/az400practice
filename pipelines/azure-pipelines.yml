@@ -34,3 +34,4 @@ steps:
     DockerNamespace: romanstestcontainerregistry.azurecr.io
     DockerRepository: testrepo
     DockerImageTag: 'python-docker'
+    StartupCommand: docker run -d -p 5000:5000 python-docker
