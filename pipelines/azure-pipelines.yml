@@ -30,7 +30,7 @@ steps:
   inputs:
     azureSubscription: 'azure_test_1 (5f2578cd-ee3f-4501-b6a6-e9d1ef55b6a9)'
     appType: webAppContainer
-    WebAppName: 'container-test'
-    DockerNamespace: romanstestcontainerregistry.azurecr.io
+    WebAppName: 'romansflasktestcontainer'
+    DockerNamespace: 'romanstestcontainerregistry.azurecr.io'
     DockerRepository: testrepo
     DockerImageTag: 'python-docker'
