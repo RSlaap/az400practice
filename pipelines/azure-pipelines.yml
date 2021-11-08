@@ -21,6 +21,6 @@ steps:
   displayName: Build an image
   inputs:
     command: buildAndPush
-    Dockerfile: ./Dockerfile
+    Dockerfile: $(Build.SourcesDirectory)/app/Dockerfile'
     repository: testrepo
     containerRegistry: ${{ variables.dockerRegistryServiceConnection }}
