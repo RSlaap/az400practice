@@ -21,16 +21,16 @@ steps:
   displayName: Build an image
   inputs:
     command: buildAndPush
-    containerRegistry: ${{ variables.dockerRegistryServiceConnection }}
+    containerRegistry: 'RomanStephan'
     repository: testrepo
     tags: python-docker
 
 - task: AzureRmWebAppDeployment@4
   displayName: 'Azure App Service Deploy: container-test'
   inputs:
-    azureSubscription: 'azure_test_1 (5f2578cd-ee3f-4501-b6a6-e9d1ef55b6a9)'
+    azureSubscription: '8a36a3c4-cb97-4495-b09f-60ccd60c2eea'
     appType: webAppContainer
-    WebAppName: 'romansflasktestcontainer'
-    DockerNamespace: 'romanstestcontainerregistry.azurecr.io'
+    WebAppName: 'stephanromantest'
+    DockerNamespace: 'stephanromantest.azurecr.io'
     DockerRepository: testrepo
     DockerImageTag: 'python-docker'
