@@ -1,0 +1,65 @@
+<html>
+ 
+<head>
+    <style>
+ 
+        /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+        img {
+            border-radius: 50%;
+            }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #4CAF50;
+            }
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+    </style>
+</head>
+ 
+<body>
+    <div>
+        <h1>Poopies</h1> 
+        <!-- Add id to image -->
+        <img id="image" src="{{url_for('static', filename='rapha.png')}}" />
+    </div>
+ 
+    <button type="button" class="button button1" onclick="show()" id="btnID">
+        Who is my love?
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+</body>
+ 
+</html>
